@@ -34,6 +34,40 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    .bottom-logos {
+      bottom: 20px;
+      left: 20px;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .bottom-logos img {
+      width: 5vw;
+      object-fit: contain;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+  
+    .bottom-logos img:hover {
+      opacity: 1;
+    }
+  
+    /* Responsive */
+    @media (max-width: 768px) {
+      .bottom-logos {
+        bottom: 15px;
+        left: 15px;
+        gap: 2px;
+      }
+  
+      .bottom-logos img {
+        width: 35vw;
+      }
+    }
+  </style>
 </head>
 
 <body class="resume-page">
@@ -95,7 +129,6 @@
         <div class="row">
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
 
             <!-- <div class="resume-item pb-0">
               <h4>Brandon Johnson</h4>
@@ -180,6 +213,17 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
+              <h4>ESCP - Option E</h4>
+              <div class="bottom-logos">
+                <img src="assets/img/logoescp.png" alt="Logo 1">
+              </div>
+              <h5>2025</h5>
+              <p><em>ESCP, Paris, France</em></p>
+              <p>ESCP, one of the world’s very best business schools, offers Option E as an elite track shaping bold, impact-driven
+              entrepreneurs with global vision. Through intensive European modules, students gain the strategic mindset and tools to
+              launch innovative, sustainable ventures.</p>
+            </div><!-- Edn Resume Item -->
+            <div class="resume-item">
               <h4>Dual certificate in video game and 3d environnment development</h4>
               <h5>September 2024 - June 2025</h5>
               <p><em>Epitech, Berlin, Germany</em></p>
@@ -199,6 +243,9 @@
 
             <div class="resume-item">
               <h4>Master's Degree in Software Engineering</h4>
+              <div class="bottom-logos">
+                <img src="assets/img/logoepitech.png" alt="Logo 1">
+              </div>
               <h5>2021 - 2026</h5>
               <p><em>Epitech, Toulouse, France</em></p>
               <p>Doing a rigorous five-year program at Epitech, gaining extensive knowledge in software development, project management, and

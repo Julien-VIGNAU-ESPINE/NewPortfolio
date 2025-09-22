@@ -13,10 +13,12 @@
 
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->  
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,6 +29,43 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Style pour les logos -->
+  <style>
+    .bottom-logos {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .bottom-logos img {
+      width: 15vw;
+      object-fit: contain;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+
+    .bottom-logos img:hover {
+      opacity: 1;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .bottom-logos {
+        bottom: 15px;
+        left: 15px;
+        gap: 2px;
+      }
+
+      .bottom-logos img {
+        width: 35vw;
+      }
+    }
+  </style>
 </head>
 
 <body class="index-page">
@@ -66,9 +105,11 @@
 
       <div class="container" data-aos="zoom-out" data-aos-delay="100">
         <h2>Julien Vignau-Espine</h2>
-        <p>I'm <span class="typed" data-typed-items="Developer, Entrepreneur, Engineer"></span><span class="typed-cursor typed-cursor--blink"></span></p>
+        <p>I'm <span class="typed" data-typed-items="Developer, Entrepreneur, Engineer"></span><span
+            class="typed-cursor typed-cursor--blink"></span></p>
         <div class="social-links">
-          <a href="https://www.youtube.com/@jv-ejulienvignau-espine6029/videos" target="_blank"><i class="bi bi-youtube"></i></a>
+          <a href="https://www.youtube.com/@jv-ejulienvignau-espine6029/videos" target="_blank"><i
+              class="bi bi-youtube"></i></a>
           <a href="https://www.instagram.com/julien_vignau_espine/" target="_blank"><i class="bi bi-instagram"></i></a>
           <a href="https://www.linkedin.com/in/julien-vignau-espine/" target="_blank"><i class="bi bi-linkedin"></i></a>
         </div>
@@ -78,12 +119,19 @@
 
   </main>
 
+  <!-- Logos en bas à gauche -->
+  <div class="bottom-logos">
+    <img src="assets/img/logoescp.png" alt="Logo 1">
+    <img src="assets/img/logoepitech.png" alt="Logo 2">
+  </div>
+
   <footer id="footer" class="footer dark-background">
     <div class="container">
       <h3 class="sitename">{JV-E}</h3>
       <p>Passionate software engineer ready for challenges and innovation. Let's recreate the world together.</p>
       <div class="social-links d-flex justify-content-center">
-        <a href="https://www.youtube.com/@jv-ejulienvignau-espine6029/videos" target="_blank"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.youtube.com/@jv-ejulienvignau-espine6029/videos" target="_blank"><i
+            class="bi bi-youtube"></i></a>
         <a href="https://www.instagram.com/julien_vignau_espine/" target="_blank"><i class="bi bi-instagram"></i></a>
         <a href="https://www.linkedin.com/in/julien-vignau-espine/" target="_blank"><i class="bi bi-linkedin"></i></a>
       </div>
@@ -92,18 +140,19 @@
           <span>Copyright</span> <strong class="px-1 sitename">Personal</strong> <span>All Rights Reserved</span>
         </div>
         <div class="credits"> -->
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
         <!-- </div> -->
       </div>
     </div>
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
